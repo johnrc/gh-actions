@@ -19,3 +19,8 @@ jobs:
       - name: List files
         run: |
           ls ${{ github.workspace }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hello-api-nix
+          path: hello-api-nix
